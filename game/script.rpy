@@ -19,7 +19,7 @@ define i = Character("ฉัน",color='#adb7c9')
 
 label start:
     $ ch = Profession('Christophe',1,'AAA')
-    "Name : [ch.name]"
+    "name : [ch.name]"
     show screen gameUI
 
     jump skip_เข้า_loop
