@@ -6,5 +6,5 @@ class Profession:
             this.defent = defs
 
 class teacher(Profession):
-    def __init__(this, health, stamina, defs, ):
+    def __init__(this, health, stamina, defs):
         super().__init__(health, stamina, defs)
