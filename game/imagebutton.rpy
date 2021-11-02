@@ -1,4 +1,4 @@
-screen save&load:
+screen saveload:
     imagebutton:
         hovered
         xalign 1.0

@@ -19,7 +19,7 @@ define i = Character("ฉัน",color='#adb7c9')
 
 label start:
 
-    show screen save&load
+    show screen saveload
 
     jump skip_เข้า_loop
 
@@ -86,7 +86,6 @@ label start:
         show s7n with dissolve
         s7 'อ้าว{cps=5}...{/cps=5}ไม่มีใครอยู่เหรอ?'
         s7 'แปลกจัง{cps=7}....{/cps=7}\nแล้วใคร{cps=5}...{/cps=5}เปิดระบบเนี้ย'
-        play sound 'audio/mixkit-keyboard-typing-1386.wav'  fadein(1.0)
         s7 'ช่างมันเถอะนั่งเขียน Code ต่อดีกว่า'
         stop sound fadeout 1.0
         jump end
@@ -207,7 +206,6 @@ label start:
     
     
 
-    play sound 'audio/HMNHart_Heart beat (ID 0218)_BSB.wav'
     pause(3.0)
     show mait2_14 with fade
     i'!!'with hpunch
