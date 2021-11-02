@@ -18,9 +18,8 @@ define i = Character("ฉัน",color='#adb7c9')
 # The game starts here.
 
 label start:
-    $ ch = Profession('Christophe',1,'AAA')
-    "name : [ch.name]"
-    show screen gameUI
+
+    show screen save&load
 
     jump skip_เข้า_loop
 
@@ -73,6 +72,7 @@ label start:
     hide s7ยิ้ม
     s7 'เราจะเจอกันเกือบทั้งเกมเลย{w} เพราะงั้นมาเป็นมิตรกับ S7 กันเถอะ'
     s7 'ว่าแต่{cps=5}...{/cps=5}เธอชื่ออะไรเหรอ?'
+    hide screen gameUI
     
     show s7อมยิ้ม with dissolve
     hide s7ยิ้ม
