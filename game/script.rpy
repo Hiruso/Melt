@@ -5,7 +5,7 @@
 
 define un = Character("-",color='#ffebeb')
 define m = Character("เม็ลท",color='#adb7c9')
-define mo = Character('โมนีคคี ส​ต​อฟ​',color='#e0edff')
+define mo = Character('โมนีค',color='#e0edff')
 define s7 = Character("S7",color="#c8ceff")
 define ze = Character('ซิลี',color='#e0edff')
 define chri = Character('ส​ต​อฟ​',color='#afc5e3')
@@ -18,9 +18,7 @@ define i = Character("ฉัน",color='#adb7c9')
 # The game starts here.
 
 label start:
-
-    show screen saveload
-
+    
     jump skip_เข้า_loop
 
     label เข้า_loop:
@@ -55,6 +53,7 @@ label start:
     # images directory to show it.
 
 
+    # pop s7 
 
     scene background_cream 
     show s7n with fade
@@ -202,51 +201,75 @@ label start:
         s7'ไม่ทันแล้ววว'
         
 
-    scene is_true with pixellate
+    # scene is_true with pixellate
+    screen bedroom 
     
+    screen saveload
+
     
+    label whereamI:
+        scene ห้องสาวงาม1280
+        
+        show mait2_14 with zoomin
+        i'!!'with hpunch
 
-    pause(3.0)
-    show mait2_14 with fade
-    i'!!'with hpunch
+        'เด็กหญิงตื่นขึ้นมา'
+        'ในนั้นหัวชาไปหมด'
+        show mait21_1 with dissolve
+        hide mait2_14
+        'แต่ไม่นานเด็กหญิงก็สามารถจูนตัวเองให้อยู่ในปัจจุบันได้'
+        i'??'
+        'เด็กหญิงเริ่มกวาดตามองไปรอบๆ {w}เพื่อทำความคุ้นเคยกับสถานที่'
+        show mait2_4 with dissolve
+        hide mait21_1
+        i'{cps=7}......{/cps}'
+        i'นี้ฉันอยู่ที่ไหน?'
+        'แต่ยังไม่ทันได้ประติดประต่อเรื่องราว {w}ก็มีผู้หญิงคนหนึ่งเดินเข้ามาในห้องที่ไม่คุ้นตาแห่งนี้'
+        show mait2_4 at left with move
+        show mait21_1 at left with dissolve
+        hide mait2_4
+        show monique1 at right with moveinright 
+        pause(2.0)
 
-    'เด็กหญิงตื่นขึ้นมา'
-    'ในหัวชาไปหมด'
-    stop sound fadeout(1.0)
-    show mait21_1 with dissolve
-    hide mait2_14
-    'แต่ไม่นานเด็กหญิงก็สามารถจูนตัวเองให้อยู่ในปัจจุบันได้'
-    i'??'
-    'เด็กหญิงเริ่มกวาดตามองไปรอบๆ {w}เพื่อทำความคุ้นเคยกับสถานที่'
-    show mait2_4 with dissolve
-    hide mait21_1
-    i'{cps=7}......{/cps}'
-    i'นี้ฉันอยู่ที่ไหน?'
-    'ยังไม่ทันได้ประติดประต่อเรื่องราว {w}ก็มีผู้หญิงคนหนึ่งเดินเข้ามาในห้องที่ไม่คุ้นตาแห่งนี้'
-    show mait2_4 at left with move
-    show mait21_1 at left with dissolve
-    hide mait2_4
-    show monique1 at right with moveinright 
-    pause(2.0)
-    un'คุณหนู​เม็ลทคะ ได้เวลาทานอาหารเช้าแล้วค่ะ'
-    i'!!!'
-    un'{cps=5}...{/cps}'
-    un'โอ้?'
-    un'ต้องขออภัยด้วยค่ะ คุณคงจะยังไม่รู้จักดิฉันสินะคะ'
-    mo'ดิฉันมีชื่อว่า {color=#e0edff}โมนีค{/color} เป็นมือซ้ายของคุณ{color=#afc5e3}​คีส​ต​อฟ​{/color}'
-    i'{cps=5}...{/cps}'
+        un'คุณเม็ลทคะ ได้เวลาทานอาหารเช้าแล้วค่ะ'
 
-    mo'คุณ{color=#afc5e3}คีส​ต​อฟ​{/color}เป็นผู้รับอุปการะคุณหนู​เม็ลทมาดูแลค่ะ'
-    i'(เม็ลท?)'
-    mo'คุณเมดได้เตรียมอาหารเช้าไว้ให้คุณเรียบร้อยแล้วนะคะ'
-    mo'ถ้าคุณหนูทำธุระส่วนตัวเสร็จแล้วล่ะก็ ขอเชิญลงไปรับประทานอาหารเช้าแล้วก็..'
-    mo'คุณ{color=#afc5e3}คีส​ต​อฟ​{/color} กำลังรอคุณอยู่ค่ะ'
-    hide monique1 with moveoutright
-    'โมนีค เดินออกไปจากห้อง'
-    s7'ทำธุระส่วนตัวเหรอ'
-    s7'S7 คิดว่าน่าจะแปรงฟันอาบน้ำ แต่ถ้าอาบน้ำเนี่ยก็ต้องเปลี่ยนชุดด้วยนะสิ..'
+        show mait2_14 at left
+        hide mait21_1
+        i'!!'
+        un'{cps=7}......{/cps}'
+        un'โอ้?'
+        un'ต้องขออภัยด้วยค่ะ คุณคงจะยังไม่รู้จักดิฉันสินะคะ'
+        mo'ดิฉันมีชื่อว่า {color=#e0edff}โมนีค{/color} เป็นมือซ้ายของคุณ{color=#afc5e3}​คีส​ต​อฟ​{/color}'
+        show mait2_13 at left with dissolve
+        i'{cps=5}....{/cps}'
+
+        show monique2 at right with dissolve
+        hide monique1
+
+        mo'คุณ{color=#afc5e3}คีส​ต​อฟ​{/color}เป็นผู้รับอุปการะคุณ​เม็ลทไงคะ'
+        i'(เม็ลท?)'
+
+        i'(นี้ชื่อฉันหรอ)'
+        show monique1 at right with dissolve
+        hide monique2
+        mo'คุณเมดได้เตรียมอาหารเช้าไว้ให้คุณเรียบร้อยแล้วนะคะ'
+        mo'ถ้าคุณหนูทำธุระส่วนตัวเสร็จแล้วล่ะก็ ขอเชิญลงไปรับประทานอาหารเช้าแล้วก็..'
+        mo'คุณ{color=#afc5e3}คีส​ต​อฟ​{/color} กำลังรอคุณอยู่ค่ะ'
+
+        hide monique1 with moveoutright
+        pause(2.0)
+        
+        'โมนีค เดินออกไปจากห้อง'
+        s7'{image=minis7_1}ทำธุระส่วนตัวเหรอ?'
+        s7'{image=minis7_3}S7 คิดว่าน่าจะแปรงฟันอาบน้ำ {w}แต่ถ้าอาบน้ำก็ต้องเปลี่ยนชุดด้วยนะสิ..'
 
 
+
+        'test'
+        
+        
+        
+        
 
     
 
@@ -260,7 +283,6 @@ label start:
 
 
    
-    jump despair
 
 
 
@@ -287,7 +309,6 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
 
     # These display lines of dialogue.
 
