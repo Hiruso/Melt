@@ -1,4 +1,4 @@
-screen gameUI:
+screen save&load:
     imagebutton:
         hovered
         xalign 1.0
@@ -15,3 +15,4 @@ screen gameUI:
         yoffset 650
         auto "gui/mm_save1_%s.png"
         action ShowMenu("save")
+
