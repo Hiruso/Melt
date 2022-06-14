@@ -35,11 +35,11 @@ label start:
         t'ไงงง'
         show ho_2_sulfur_pose_2
         show ho_1_sulfur_pose_2
-        t 'ฉัน{color=#fffb91}​star{/color}'
+        t 'ฉัน{color=#fffb91}star{/color}'
         t 'ไง'
 
 
-        t 'ฉ  ฉ   ฉัน {color=#fffb91}​star{/color}'
+        t 'ฉ  ฉ   ฉัน {color=#fffb91}star{/color}'
 
         jump loop
 
