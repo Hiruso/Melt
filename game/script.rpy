@@ -4,12 +4,12 @@
 # name of the character.
 
 define un = Character("-",color='#ffebeb')
-define m = Character("เม็ลท",color='#adb7c9')
+define m = Character("เม็ลท",color='#440000')
 define mo = Character('โมนีค',color='#e0edff')
 define s7 = Character("S7",color="#c8ceff")
-define ze = Character('ซิลี',color='#e0edff')
-define chri = Character('ส​ต​อฟ​',color='#afc5e3')
-define a = Character('อัลเลน​',color='#82a3ff')
+define ze = Character("ซิลี",color='#e0edff')
+define chri = Character("คิส​ต​อฟ​",color='#afc5e3')
+define a = Character("อัลเลน​",color='#82a3ff')
 define s = Character("star",color='#fffb91')
 define t = Character("time",color='#fffb91')
 define i = Character("ฉัน",color='#adb7c9')
@@ -276,30 +276,6 @@ label start:
 
 
     jump end
-
-
-
-
-
-
-   
-
-
-
-    
-
-   
-
-
-
-
-
-
-
-
-
-    
-
 
 
     label end:
