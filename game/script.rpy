@@ -3,8 +3,8 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define un = Character("-",color='#ffebeb')
-define m = Character("เม็ลท",color='#440000')
+define un = Character("-",color='#f1ebff')
+define m = Character("เม็ลท",color='#3a0f0f')
 define mo = Character('โมนีค',color='#e0edff')
 define s7 = Character("S7",color="#c8ceff")
 define ze = Character("ซิลี",color='#e0edff')
@@ -12,7 +12,7 @@ define chri = Character("คิส​ต​อฟ​",color='#afc5e3')
 define a = Character("อัลเลน​",color='#82a3ff')
 define s = Character("star",color='#fffb91')
 define t = Character("time",color='#fffb91')
-define you = Character("คุณ",color='#adb7c9')
+define you = Character("คุณ",color='#ffffff')
 
 
 # The game starts here.
@@ -26,9 +26,9 @@ label start:
     scene room s7_1
     show s7_4
     with fade
-    un "\"หน้าจอมันสว่างขึ้น​ มีคนมาแล้วหรอ?\""
-    un "\"ถ้าหากมีคนอยู่ก็ส่งสัญญาณ​อะไรสัก​หน่อยสิ\""
-    menu:
+    un "\"หน้าจอมันสว่างขึ้น{cps=1} {/cps}มีคนมาแล้วหรอ?\""
+    un "\"ถ้าหากมีคนอยู่ก็ช่วยส่งสัญญาณ​อะไรสัก​หน่อยสิ\""
+    menu saysomething:
         "ส่งสัญญาณหาเธอหน่อยสิ"
         "ส่ง \"สวัสดี\" ไป":
             show s7_1
@@ -37,25 +37,30 @@ label start:
 
         "ไม่ทำอะไร":
             show s7_5
-            un "\"\""
-            pass
+            un "\"{cps=5}.......{/cps}\""
+            un "\"ต้องมีอะไรมากวนระบบแน่ๆเลย\""
+            return
+    hide s7_1
+    s7 "\"ชื่อ S7 อายุ 6 ขวบ เป็นลูกครึ่ง Gnuplaแล้วก็plang\""
+
+    show s7_5
+    hide s7_4
+    s7 "\"เอาตามความจริงเลยนะ​ ฉันก็ไม่รู้ว่าฉันมาทำอะไรที่นี่​และมาได้ยังไง {p}แต่เหมือนว่าหน้าที่ของฉันจะต้องมาต้อนรับคุณ\""
+    s7 "\"เหมือนอ่านคำนำมั้งนะ\""
+
+    show s7_1
+    hide s7_5
+    s7 "\"เอาล่ะ มาเริ่มกันเถอะ\""
+    show s7_1 at left with move
+    show s7_2 at left
+    hide s7_1
+
+    s7 "\"สวัสดีคุณผู้อ่าน ฉัน S7 ยินดีเป็นอย่างยิ่งที่ได้มาเป็นผู้ช่วยของคุณในเกมนี้\""
+    show s7_3 at left with dissolve
+    hide s7_3
+    s7 "\"\""
 
 
-            
-
-
-        
-        
-        
-
-    
-
-
-
-    jump end
-
-
-    label end:
 
 
     # This shows a character sprite. A placeholder is used, but you can
@@ -65,7 +70,7 @@ label start:
 
     # These display lines of dialogue.
 
-    
+
     # This ends the game.
 
     return
