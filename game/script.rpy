@@ -4,7 +4,7 @@
 # name of the character.
 
 define un = Character("-",color='#f1ebff')
-define m = Character("เม็ลท",color='#3a0f0f')
+define m = Character("เม็ลท",color='#8f0000')
 define mo = Character('โมนีค',color='#e0edff')
 define s7 = Character("S7",color="#c8ceff")
 define ze = Character("ซิลี",color='#e0edff')
@@ -41,7 +41,7 @@ label start:
             un "\"ต้องมีอะไรมากวนระบบแน่ๆเลย\""
             return
     hide s7_1
-    s7 "\"ชื่อ S7 อายุ 6 ขวบ เป็นลูกครึ่ง Gnuplaแล้วก็plang\""
+    s7 "\"ชื่อ S7 อายุ 6 ขวบ เป็นลูกครึ่ง Gnuplaแล้วก็Plang\""
 
     show s7_5
     hide s7_4
@@ -59,6 +59,40 @@ label start:
     show s7_3 at left with dissolve
     hide s7_3
     s7 "\"\""
+    s7 "\"\""
+    s7 "\"\""
+
+    show s7_1 at left
+    s7 "\"นี้ก็น่าจะถึงเวลาอันสมควรแล้วที่ เราจะเข้าไปสู่เนื้อหาเริ่มแรกกัน\""
+    hide s7_1
+    s7 "\"ไปกันเลยยย!\""
+    hide s7_2
+
+    scene 11
+    with dissolve
+    s7 "\"เอ่อ.. {w}ครั้งอดีตกาลได้มีดินแดนอยู่ 5 แห่ง\""
+    scene 22
+    s7 "\"ได้แก่ แดนแห่งกาลเวลา\""
+    scene 33
+
+    s7 "\"แดนแห่งเสียงเพลง \""
+    scene 44
+    s7 "\"แดนแห่งความรู้\" "
+    scene 55
+    s7 "\"แดนแห่งแสงสว่าง\""
+    scene 66
+    s7 "\"และ แดนแห่งความมืด\""
+    
+    scene is_true
+    s7 '\"แต่แล้ว..{cps=7}..{/cps} เพราะความแตกต่าง{cps=7}..{/cps}{w}จึงทำให้เกิดสงครามขึ้น\"'
+
+    scene background_peach with fade
+    s7 '\"เศษส่วน {color=fffb91} สเลย์เมย์​เต็ด{cps=5} {/cps}{/color}ที่เปรียบดัง{color=82a3ff}พลังและเลือดเนื้อ{/color}กระจายทั่วเกลื่อนกลาดไปหมด\"'
+
+
+
+
+    
 
 
 
